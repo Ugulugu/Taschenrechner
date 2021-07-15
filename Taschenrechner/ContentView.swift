@@ -30,6 +30,8 @@ struct ContentView: View {
     //Wert dafür, ob es sich um eine neue Rechnung handelt oder ob jemand mehrfach hintereinander auf = gedrückt hat
     @State var status = 0
     
+    
+    let buttonSize = 75
     var body: some View {
         
         //ZStack bildet eine Tiefenebene auf der Objekte (Texte etc.) platziert werden können
@@ -77,7 +79,7 @@ struct ContentView: View {
                                 //Textfarbe des Buttons
                                 .foregroundColor(.white)
                                 //Rahmen und Größe des Buttons
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 //Rahmenfarbe
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 //Abgerundete Ecken, weil schöner
@@ -93,7 +95,7 @@ struct ContentView: View {
                         }, label: {
                             Text("8")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -105,7 +107,7 @@ struct ContentView: View {
                         }, label: {
                             Text("9")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -121,7 +123,7 @@ struct ContentView: View {
                         }, label: {
                             Text("/")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -136,7 +138,7 @@ struct ContentView: View {
                         }, label: {
                             Text("4")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -148,7 +150,7 @@ struct ContentView: View {
                         }, label: {
                             Text("5")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -160,7 +162,7 @@ struct ContentView: View {
                         }, label: {
                             Text("6")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -177,7 +179,7 @@ struct ContentView: View {
                         }, label: {
                             Text("*")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -191,7 +193,7 @@ struct ContentView: View {
                         }, label: {
                             Text("1")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -203,7 +205,7 @@ struct ContentView: View {
                         }, label: {
                             Text("2")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -215,7 +217,7 @@ struct ContentView: View {
                         }, label: {
                             Text("3")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -231,7 +233,7 @@ struct ContentView: View {
                         }, label: {
                             Text("-")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -245,7 +247,7 @@ struct ContentView: View {
                         }, label: {
                             Text("0")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -264,7 +266,7 @@ struct ContentView: View {
                         }, label: {
                             Text("DEL")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -305,7 +307,7 @@ struct ContentView: View {
                         }, label: {
                             Text("=")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
@@ -321,7 +323,7 @@ struct ContentView: View {
                         }, label: {
                             Text("+")
                                 .foregroundColor(.white)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(10)
                                 .padding()
