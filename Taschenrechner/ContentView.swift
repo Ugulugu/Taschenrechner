@@ -30,8 +30,13 @@ struct ContentView: View {
     //Wert dafür, ob es sich um eine neue Rechnung handelt oder ob jemand mehrfach hintereinander auf = gedrückt hat
     @State var status = 0
     
+    //Wert für die Größe der Buttons
+    let buttonSize:CGFloat = 60
     
-    let buttonSize = 75
+    //Wert für den Eckenradius für Textfield und Buttons
+    let cornerRadius:CGFloat = 15
+    
+    
     var body: some View {
         
         //ZStack bildet eine Tiefenebene auf der Objekte (Texte etc.) platziert werden können
@@ -53,7 +58,7 @@ struct ContentView: View {
                     //Farbe des Rahmen
                     .border(Color.black)
                     //Rundet die Ecken ab (nur aus Designgründen)
-                    .cornerRadius(10)
+                    .cornerRadius(cornerRadius)
                     //Kontrolliert den Platz um das Textfield
                     .padding()
                 
@@ -79,11 +84,11 @@ struct ContentView: View {
                                 //Textfarbe des Buttons
                                 .foregroundColor(.white)
                                 //Rahmen und Größe des Buttons
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 //Rahmenfarbe
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                                 //Abgerundete Ecken, weil schöner
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 //Kontrolliert den Platz um den Button
                                 .padding()
                                 
@@ -95,9 +100,9 @@ struct ContentView: View {
                         }, label: {
                             Text("8")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                         Button(action: {
@@ -107,9 +112,9 @@ struct ContentView: View {
                         }, label: {
                             Text("9")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                         Button(action: {
@@ -123,9 +128,9 @@ struct ContentView: View {
                         }, label: {
                             Text("/")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                         
@@ -138,9 +143,9 @@ struct ContentView: View {
                         }, label: {
                             Text("4")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                         Button(action: {
@@ -150,9 +155,9 @@ struct ContentView: View {
                         }, label: {
                             Text("5")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                         Button(action: {
@@ -162,9 +167,9 @@ struct ContentView: View {
                         }, label: {
                             Text("6")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                         Button(action: {
@@ -179,9 +184,9 @@ struct ContentView: View {
                         }, label: {
                             Text("*")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                     }
@@ -193,9 +198,9 @@ struct ContentView: View {
                         }, label: {
                             Text("1")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                         Button(action: {
@@ -205,9 +210,9 @@ struct ContentView: View {
                         }, label: {
                             Text("2")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                         Button(action: {
@@ -217,9 +222,9 @@ struct ContentView: View {
                         }, label: {
                             Text("3")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                         Button(action: {
@@ -233,9 +238,9 @@ struct ContentView: View {
                         }, label: {
                             Text("-")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                     }
@@ -247,9 +252,9 @@ struct ContentView: View {
                         }, label: {
                             Text("0")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                         
@@ -266,9 +271,9 @@ struct ContentView: View {
                         }, label: {
                             Text("DEL")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                         Button(action: {
@@ -307,9 +312,9 @@ struct ContentView: View {
                         }, label: {
                             Text("=")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                         Button(action: {
@@ -323,9 +328,9 @@ struct ContentView: View {
                         }, label: {
                             Text("+")
                                 .foregroundColor(.white)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: buttonSize, height: buttonSize, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(10)
+                                .cornerRadius(cornerRadius)
                                 .padding()
                         })
                     }
